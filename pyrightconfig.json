@@ -1,0 +1,36 @@
+{
+  "pythonVersion": "3.13",
+  "venvPath": ".",
+  "venv": ".venv",
+  "typeCheckingMode": "basic",
+  "reportMissingModuleSource": "none",
+  "reportMissingImports": "warning",
+  "reportMissingTypeStubs": "none",
+  "reportUnknownVariableType": "none",
+  "reportUnknownMemberType": "none",
+  "reportUnknownArgumentType": "none",
+  "reportUnknownParameterType": "none",
+  "reportIndexIssue": "none",
+  "reportOperatorIssue": "none",
+  "reportAttributeAccessIssue": "none",
+  "reportCallIssue": "none",
+  "reportReturnType": "none",
+  "reportArgumentType": "none",
+  "reportGeneralTypeIssues": "none",
+  "extraPaths": [
+    ".",
+    "./.venv/Lib/site-packages",
+    "d:/Project1"
+  ],
+  "exclude": [
+    "**/venv/**",
+    "**/.venv/**",
+    "**/__pycache__/**",
+    "**/node_modules/**"
+  ],
+  "ignore": [
+    "**/venv/**",
+    "**/.venv/**",
+    "**/__pycache__/**"
+  ]
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NETFALCON - Network Analyzer</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='landing.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <script src="{{ url_for('static', filename='theme.js') }}"></script>
+    <style>
+        .theme-toggle-landing {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            color: var(--text-color);
+            padding: 10px 15px;
+            border-radius: 10px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+        .theme-toggle-landing:hover {
+            border-color: var(--accent-color);
+        }
+        .ai-feature {
+            background: linear-gradient(90deg, #a78bfa, #7c3aed, #4f46e5);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: 800;
+        }
+    </style>
+</head>
+<body>
+    <button class="theme-toggle-landing" onclick="toggleTheme()">🌓 Theme</button>
+    <div class="landing-container">
+        <div class="logo-large">🛰️</div>
+        <h1>NETFALCON</h1>
+        <p class="subtitle" style="max-width: 650px; margin: 0 auto 30px auto; line-height: 1.6;">
+            A comprehensive real-time network traffic analysis and threat intelligence platform powered by 
+            <span class="ai-feature">Machine Learning Anomaly Detection</span> to catch zero-day threats in real-time.
+        </p>
+
+        <div class="features-list">
+            <div class="f-item" style="border-color: #a78bfa; background: rgba(167,139,250,0.05);">🤖 AI Anomaly Detection Engine</div>
+            <div class="f-item">📊 Live Packet Streaming</div>
+            <div class="f-item">🔔 Smart Alerting (Email/Push)</div>
+            <div class="f-item">🔍 Deep Threat Analytics</div>
+            <div class="f-item">🔥 DoS Simulation Testing</div>
+            <div class="f-item">🛡️ Auto-Mitigation Firewall</div>
+            <div class="f-item">📁 PCAP Forensic Analysis</div>
+        </div>
+
+        <div style="margin-top: 50px;">
+            <a href="{{ url_for('dashboard') }}" class="btn-main">
+                Launch Analyzer Dashboard &rarr;
+            </a>
+        </div>
+    </div>
+</body>
+</html>

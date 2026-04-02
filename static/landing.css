@@ -1,0 +1,104 @@
+:root {
+    --bg-color: #0b0e14;
+    --text-color: #eff2f5;
+    --text-muted: #8b949e;
+    --card-bg: rgba(255, 255, 255, 0.03);
+    --border-color: rgba(255, 255, 255, 0.05);
+    --accent-color: #00e5ff;
+    --grad-start: #00e5ff;
+    --grad-end: #7c4dff;
+}
+
+.light-mode {
+    --bg-color: #f4f7f9;
+    --text-color: #1a1c22;
+    --text-muted: #4b5563;
+    --card-bg: #ffffff;
+    --border-color: rgba(0, 0, 0, 0.1);
+    --grad-start: #0088ff;
+    --grad-end: #7c4dff;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background: var(--bg-color);
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+.landing-container {
+    width: 90%;
+    max-width: 800px;
+    padding: 60px 40px;
+    text-align: center;
+    background: radial-gradient(circle at top right, rgba(0, 229, 255, 0.05), transparent 40%);
+}
+
+.logo-large {
+    font-size: 5rem;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 4rem;
+    font-weight: 800;
+    margin: 0 0 10px 0;
+    background: linear-gradient(to right, var(--grad-start), var(--grad-end));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: -2px;
+}
+
+.subtitle {
+    font-size: 1.25rem;
+    color: var(--text-muted);
+    margin-bottom: 50px;
+    line-height: 1.6;
+}
+
+.features-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin-bottom: 50px;
+}
+
+.f-item {
+    background: var(--card-bg);
+    padding: 15px;
+    border-radius: 12px;
+    border: 1px solid var(--border-color);
+    font-size: 1rem;
+    color: var(--text-color);
+    font-weight: 600;
+}
+
+.btn-main {
+    display: inline-block;
+    background: #00e5ff;
+    color: #000;
+    padding: 16px 40px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    border-radius: 12px;
+    font-weight: 800;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 4px 15px rgba(0, 229, 255, 0.2);
+}
+
+.btn-main:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0, 229, 255, 0.4);
+    background: #fff;
+}

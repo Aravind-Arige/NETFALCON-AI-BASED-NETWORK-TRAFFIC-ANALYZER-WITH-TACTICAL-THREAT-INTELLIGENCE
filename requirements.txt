@@ -1,0 +1,16 @@
+flask
+flask-socketio
+scapy
+psutil
+requests
+python-dotenv
+
+# Network analysis
+reportlab
+openpyxl
+
+# AI Anomaly Detection Engine
+scikit-learn
+numpy
+pandas
+joblib

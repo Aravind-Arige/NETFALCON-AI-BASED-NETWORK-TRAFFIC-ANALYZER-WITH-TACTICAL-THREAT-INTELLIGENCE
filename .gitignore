@@ -1,0 +1,11 @@
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.csv
+*.pcap
+*.pcapng
+.env
+database.db
+database.db.salt
