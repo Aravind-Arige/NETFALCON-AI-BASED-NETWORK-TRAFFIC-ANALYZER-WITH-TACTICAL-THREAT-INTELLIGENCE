@@ -62,9 +62,14 @@ project/
 ├── app.py                        # Flask application entry point
 ├── requirements.txt              # Python dependencies
 ├── database.db                   # SQLite database (auto-generated)
-├── .env                          # Environment variables (not committed)
 ├── .gitignore
 ├── pyrightconfig.json            # Pyright type-checker config
+├── debug_if.py               # Interface debug utility
+├── dos_test.py               # DoS attack simulation test
+├── temp_test.py              # Temporary/scratch tests
+├── test_alert.py             # Alert pipeline tests
+├── test.pcap                 # Sample PCAP for testing
+└── test2.pcap                # Additional sample PCAP
 │
 ├── alerts/                       # Alert management module
 │   ├── __init__.py
@@ -104,14 +109,6 @@ project/
 │
 ├── uploads/                      # User-uploaded PCAP files (runtime)
 ├── Screenshots/                  # Project screenshots
-│
-└── tests/
-    ├── debug_if.py               # Interface debug utility
-    ├── dos_test.py               # DoS attack simulation test
-    ├── temp_test.py              # Temporary/scratch tests
-    ├── test_alert.py             # Alert pipeline tests
-    ├── test.pcap                 # Sample PCAP for testing
-    └── test2.pcap                # Additional sample PCAP
 ```
  
 
