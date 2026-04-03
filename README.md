@@ -57,19 +57,19 @@
 ## 📁 Project Structure
 
 ```
-project/
+NETFALCON/
 │
 ├── app.py                        # Flask application entry point
 ├── requirements.txt              # Python dependencies
 ├── database.db                   # SQLite database (auto-generated)
 ├── .gitignore
 ├── pyrightconfig.json            # Pyright type-checker config
-├── debug_if.py               # Interface debug utility
-├── dos_test.py               # DoS attack simulation test
-├── temp_test.py              # Temporary/scratch tests
-├── test_alert.py             # Alert pipeline tests
-├── test.pcap                 # Sample PCAP for testing
-└── test2.pcap                # Additional sample PCAP
+├── debug_if.py                   # Interface debug utility
+├── dos_test.py                   # DoS attack simulation test
+├── temp_test.py                  # Temporary/scratch tests
+├── test_alert.py                 # Alert pipeline tests
+├── test.pcap                     # Sample PCAP for testing
+└── test2.pcap                    # Additional sample PCAP
 │
 ├── alerts/                       # Alert management module
 │   ├── __init__.py
@@ -96,7 +96,8 @@ project/
 │   └── models.py                 # Isolation Forest model wrapper
 │
 ├── models/                       # Trained ML model artifacts (.pkl files)
-│
+    ├──isolation_forest.pkl
+|
 ├── static/                       # Frontend static assets
 │   ├── style.css                 # Dashboard styles
 │   ├── landing.css               # Landing page styles
