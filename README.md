@@ -56,59 +56,64 @@
 ```
 ## 📁 Project Structure
 
-NETFALCON/
+```
+project/
 │
-├── app.py                        # Flask application entry point 
-├── requirements.txt              # Python dependencies 
-├── database.db                   # SQLite database (auto-generated) 
-├── .gitignore 
-├── pyrightconfig.json            # Pyright type-checker config 
-├── debug_if.py               # Interface debug utility 
-├── dos_test.py               # DoS attack simulation test 
-├── temp_test.py              # Temporary/scratch tests 
-├── test_alert.py             # Alert pipeline tests 
-├── test.pcap                 # Sample PCAP for testing 
-└── test2.pcap                # Additional sample PCAP 
+├── app.py                        # Flask application entry point
+├── requirements.txt              # Python dependencies
+├── database.db                   # SQLite database (auto-generated)
+├── .env                          # Environment variables (not committed)
+├── .gitignore
+├── pyrightconfig.json            # Pyright type-checker config
 │
-├── alerts/                       # Alert management module 
+├── alerts/                       # Alert management module
 │   ├── __init__.py
-│   ├── config.py                 # Alert thresholds & configuration 
-│   └── dispatcher.py            # Routes & dispatches triggered alerts 
+│   ├── config.py                 # Alert thresholds & configuration
+│   └── dispatcher.py            # Routes & dispatches triggered alerts
 │
-├── analyzer/                     # Core traffic analysis engine 
+├── analyzer/                     # Core traffic analysis engine
 │   ├── __init__.py
-│   ├── database.py               # DB models & query helpers 
-│   ├── dpi.py                    # Deep Packet Inspection logic 
-│   ├── engine.py                 # Main analysis orchestration 
-│   ├── firewall.py               # Firewall rule evaluation 
-│   ├── metrics.py                # Traffic metrics collection 
-│   ├── mitre.py                  # MITRE ATT&CK technique mapping 
-│   ├── pcap_analyzer.py          # PCAP file parsing & replay  
-│   ├── simulator.py              # Traffic simulation for testing 
-│   └── threat_intel.py           # Threat intelligence feed integration 
+│   ├── database.py               # DB models & query helpers
+│   ├── dpi.py                    # Deep Packet Inspection logic
+│   ├── engine.py                 # Main analysis orchestration
+│   ├── firewall.py               # Firewall rule evaluation
+│   ├── metrics.py                # Traffic metrics collection
+│   ├── mitre.py                  # MITRE ATT&CK technique mapping
+│   ├── pcap_analyzer.py          # PCAP file parsing & replay
+│   ├── simulator.py              # Traffic simulation for testing
+│   └── threat_intel.py           # Threat intelligence feed integration
 │
-├── anomaly_engine/               # ML-based anomaly detection 
+├── anomaly_engine/               # ML-based anomaly detection
 │   ├── __init__.py
-│   ├── engine.py                 # Detection pipeline orchestration 
-│   ├── explainer.py              # SHAP-based prediction explainer 
-│   ├── feature_extractor.py      # Feature engineering from raw traffic 
-│   └── models.py                 # Isolation Forest model wrapper 
+│   ├── engine.py                 # Detection pipeline orchestration
+│   ├── explainer.py              # SHAP-based prediction explainer
+│   ├── feature_extractor.py      # Feature engineering from raw traffic
+│   └── models.py                 # Isolation Forest model wrapper
 │
-├── models/                       # Trained ML model artifacts (.pkl files) 
-    ├──isolation_forest.pki
-|    
-├── static/                       # Frontend static assets 
-│   ├── style.css                 # Dashboard styles 
-│   ├── landing.css               # Landing page styles 
-│   ├── script.js                 # Dashboard logic & API calls 
-│   └── theme.js                  # Theme switching (light/dark) 
+├── models/                       # Trained ML model artifacts (.pkl files)
 │
-├── templates/                    # Jinja2 HTML templates 
-│   ├── index.html                # Main dashboard 
-│   └── landing.html              # Landing / home page 
+├── static/                       # Frontend static assets
+│   ├── style.css                 # Dashboard styles
+│   ├── landing.css               # Landing page styles
+│   ├── script.js                 # Dashboard logic & API calls
+│   └── theme.js                  # Theme switching (light/dark)
 │
-├── uploads/                      # User-uploaded PCAP files (runtime) 
-├── Screenshots/                  # Project screenshots 
+├── templates/                    # Jinja2 HTML templates
+│   ├── index.html                # Main dashboard
+│   └── landing.html              # Landing / home page
+│
+├── uploads/                      # User-uploaded PCAP files (runtime)
+├── Screenshots/                  # Project screenshots
+│
+└── tests/
+    ├── debug_if.py               # Interface debug utility
+    ├── dos_test.py               # DoS attack simulation test
+    ├── temp_test.py              # Temporary/scratch tests
+    ├── test_alert.py             # Alert pipeline tests
+    ├── test.pcap                 # Sample PCAP for testing
+    └── test2.pcap                # Additional sample PCAP
+```
+ 
 
 ## 🛠️ Tech Stack
 
