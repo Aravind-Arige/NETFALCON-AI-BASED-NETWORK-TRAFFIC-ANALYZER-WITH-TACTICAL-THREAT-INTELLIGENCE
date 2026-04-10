@@ -1,3 +1,5 @@
+## NETFALCON - AI BASED NETWORK TEAFFIC ANALYZER WITH TACTICAL THREAT INTELLIGENCE
+
 **NETFALCON** is a comprehensive, AI-powered network traffic analysis platform that addresses the critical gaps in traditional network monitoring tools. Unlike passive capture utilities such as Wireshark or signature-dependent IDS platforms like Snort, NETFALCON combines:
 
 - **Deep Packet Inspection** via Scapy
